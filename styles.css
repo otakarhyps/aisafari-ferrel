@@ -1,0 +1,541 @@
+/* ═══════════════════════════════════════════════════════════════
+   AI SAFARI SESSIONS - SHARED STYLES
+   We Are Animals Academy Brand
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN SYSTEM TOKENS
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  /* Colors */
+  --ink: #0a0a0f;
+  --white: #ffffff;
+  --purple-600: #7f68f3;
+  --purple-700: #6b54e0;
+  --orange-500: #ff961b;
+  --green-600: #00bc68;
+  --lilac-50: #f4f3ff;
+  --lilac-75: #f2f2fe;
+  --charcoal-70: rgba(45, 39, 37, 0.7);
+  --charcoal-90: rgba(45, 39, 37, 0.9);
+
+  /* Typography */
+  --font-heading: 'Satoshi', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-padding: 80px 40px;
+  --section-padding-mobile: 60px 24px;
+  --content-max-width: 1200px;
+  --content-narrow: 800px;
+
+  /* Borders & Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 100px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--purple-600);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--purple-700);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════ */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--charcoal-70);
+  max-width: 600px;
+}
+
+/* Purple pill decoration for headings */
+.highlight {
+  background: var(--purple-600);
+  color: var(--white);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LAYOUT
+   ═══════════════════════════════════════════════════════════════ */
+.container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container--narrow {
+  max-width: var(--content-narrow);
+}
+
+section {
+  padding: var(--section-padding);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+  section {
+    padding: var(--section-padding-mobile);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HEADER
+   ═══════════════════════════════════════════════════════════════ */
+.site-header {
+  padding: 24px 40px;
+  background: var(--white);
+  border-bottom: 1px solid var(--lilac-75);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.logo:hover {
+  color: var(--ink);
+}
+
+.logo-mark {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.nav-back {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--purple-600);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-back:hover {
+  color: var(--purple-700);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO SECTION
+   ═══════════════════════════════════════════════════════════════ */
+.hero {
+  background: var(--white);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic-tag {
+  display: inline-block;
+  background: var(--lilac-50);
+  color: var(--purple-600);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.hero .lead {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SESSION LIST (INDEX PAGE)
+   ═══════════════════════════════════════════════════════════════ */
+.sessions-list {
+  background: var(--white);
+}
+
+.sessions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.session-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--lilac-75);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.session-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(127, 104, 243, 0.12);
+  border-color: var(--purple-600);
+  color: var(--ink);
+}
+
+.session-card__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--lilac-50);
+  color: var(--purple-600);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.session-card__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.session-card__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.session-card__meta {
+  font-size: 0.875rem;
+  color: var(--charcoal-70);
+}
+
+.session-card__arrow {
+  color: var(--purple-600);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SESSION PAGE - KEY TAKEAWAYS
+   ═══════════════════════════════════════════════════════════════ */
+.takeaways {
+  background: var(--lilac-50);
+}
+
+.takeaways h2 {
+  margin-bottom: 24px;
+}
+
+.takeaways-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.takeaways-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+}
+
+.takeaways-list li::before {
+  content: '✓';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--green-600);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SESSION PAGE - DISCUSSION
+   ═══════════════════════════════════════════════════════════════ */
+.discussion {
+  background: var(--white);
+}
+
+.discussion h2 {
+  margin-bottom: 24px;
+}
+
+.discussion-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.discussion-content h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--purple-600);
+}
+
+.discussion-content h3:first-child {
+  margin-top: 0;
+}
+
+.discussion-content ul,
+.discussion-content ol {
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.discussion-content li {
+  margin-bottom: 8px;
+}
+
+.discussion-content blockquote {
+  margin: 24px 0;
+  padding: 20px 24px;
+  background: var(--lilac-50);
+  border-left: 4px solid var(--purple-600);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--charcoal-90);
+}
+
+.discussion-content code {
+  background: var(--lilac-50);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9em;
+}
+
+.discussion-content pre {
+  background: var(--ink);
+  color: var(--white);
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.discussion-content pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SESSION PAGE - RESOURCES
+   ═══════════════════════════════════════════════════════════════ */
+.resources {
+  background: var(--lilac-50);
+}
+
+.resources h2 {
+  margin-bottom: 24px;
+}
+
+.resources-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resources-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resources-list li::before {
+  content: '→';
+  color: var(--purple-600);
+  font-weight: 600;
+}
+
+.resources-list a {
+  font-weight: 500;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════════════ */
+.site-footer {
+  background: var(--ink);
+  color: var(--white);
+  padding: 48px 40px;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo .logo-mark {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-logo .logo-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE ADJUSTMENTS
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 16px 24px;
+  }
+
+  .site-header .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .session-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .session-card__arrow {
+    display: none;
+  }
+
+  .takeaways-list li {
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .highlight {
+    padding: 0.05em 0.3em;
+  }
+
+  .session-card {
+    padding: 20px;
+  }
+
+  .session-card__number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
