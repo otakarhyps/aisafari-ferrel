@@ -3,126 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SESSION_TITLE | AI Safari | We Are Animals Academy</title>
-  <meta name="description" content="SESSION_DESCRIPTION">
+  <title><!-- SESSION_TITLE --> | AI Safari Ferrel</title>
+  <meta name="description" content="<!-- SESSION_DESCRIPTION -->">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <!-- ═══════════════════════════════════════════════════════════════
-       HEADER
-       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- ════════════ HEADER ════════════ -->
   <header class="site-header">
     <div class="container">
       <a href="../index.html" class="logo">
-        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="8" fill="#7f68f3"/>
-          <path d="M10 28L20 12L30 28H10Z" fill="white"/>
-        </svg>
-        <span class="logo-text">We Are Animals Academy</span>
+        <img src="../assets/logo.svg" alt="We Are Animals" class="logo-mark">
       </a>
-      <a href="../index.html" class="nav-back">← All Sessions</a>
+      <a href="../index.html" class="nav-back">&larr; All Sessions</a>
     </div>
   </header>
 
   <main>
-    <!-- ═══════════════════════════════════════════════════════════════
-         HERO SECTION
-         ═══════════════════════════════════════════════════════════════ -->
-    <section class="hero">
-      <div class="container">
-        <span class="topic-tag">Session SESSION_NUMBER • SESSION_DATE</span>
-        <h1>SESSION_TITLE</h1>
-        <p class="lead">SESSION_LEAD</p>
+
+    <!-- ════════════ SESSION HERO ════════════ -->
+    <section class="session-hero">
+      <div class="container container--narrow">
+        <span class="topic-tag">Session <!-- SESSION_NUMBER --> &bull; <!-- SESSION_DATE --></span>
+        <h1><!-- SESSION_TITLE --></h1>
+        <p class="lead"><!-- SESSION_LEAD --></p>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════
-         KEY TAKEAWAYS
-         ═══════════════════════════════════════════════════════════════ -->
+    <!-- ════════════ KEY TAKEAWAYS ════════════ -->
     <section class="takeaways">
       <div class="container container--narrow">
         <h2>Key Takeaways</h2>
         <ul class="takeaways-list">
-          <li>TAKEAWAY_1</li>
-          <li>TAKEAWAY_2</li>
-          <li>TAKEAWAY_3</li>
-          <!-- Add more takeaways as needed -->
+          <!-- TAKEAWAYS_START -->
+          <li><!-- TAKEAWAY_ITEM --></li>
+          <li><!-- TAKEAWAY_ITEM --></li>
+          <li><!-- TAKEAWAY_ITEM --></li>
+          <!-- TAKEAWAYS_END -->
         </ul>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════
-         DISCUSSION
-         ═══════════════════════════════════════════════════════════════ -->
+    <!-- ════════════ WHAT WE COVERED ════════════ -->
     <section class="discussion">
       <div class="container container--narrow">
         <h2>What We Covered</h2>
         <div class="discussion-content">
+          <!-- DISCUSSION_START -->
           <!--
-          This section contains the formatted discussion notes.
-          You can use:
-          - <h3> for subsection headings
-          - <p> for paragraphs
-          - <ul>/<ol> for lists
-          - <blockquote> for notable quotes or key points
-          - <code> for inline code
-          - <pre><code> for code blocks
+            Available elements:
+            <h3>        — Subsection headings (renders in purple)
+            <p>         — Paragraphs
+            <ul>/<ol>   — Lists
+            <li><strong>Term</strong> – Description</li>  — Definition-style lists
+            <blockquote> — Key quotes
+            <figure class="lightbox-trigger">
+              <img src="../images/session-N/filename.png" alt="Description">
+              <figcaption>Caption text</figcaption>
+            </figure>
           -->
 
           <h3>Topic Heading</h3>
-          <p>Discussion content goes here...</p>
-
-          <blockquote>
-            A key insight or memorable quote from the session.
-          </blockquote>
+          <p>Content goes here...</p>
 
           <h3>Another Topic</h3>
           <ul>
-            <li>Point one</li>
-            <li>Point two</li>
-            <li>Point three</li>
+            <li><strong>Point one</strong> – Description</li>
+            <li><strong>Point two</strong> – Description</li>
           </ul>
+
+          <blockquote>
+            <p>A key insight or memorable quote from the session.</p>
+          </blockquote>
+          <!-- DISCUSSION_END -->
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════
-         RESOURCES
-         ═══════════════════════════════════════════════════════════════ -->
+    <!-- ════════════ USE CASES ════════════ -->
+    <section class="use-cases">
+      <div class="container container--narrow">
+        <h2>Use Cases</h2>
+        <p class="section-desc">Topics and challenges participants brought to the session.</p>
+        <div class="use-cases-list">
+          <!-- USE_CASES_START -->
+          <!--
+            Each use case has a participant name + brief description:
+            <div class="use-case-item">
+              <span class="use-case-item__icon">●</span>
+              <div class="use-case-item__content">
+                <span class="use-case-item__name">Participant Name</span>
+                <span class="use-case-item__desc">Brief description</span>
+              </div>
+            </div>
+          -->
+          <div class="use-case-item">
+            <span class="use-case-item__icon">●</span>
+            <div class="use-case-item__content">
+              <span class="use-case-item__name"><!-- PARTICIPANT_NAME --></span>
+              <span class="use-case-item__desc"><!-- USE_CASE_DESC --></span>
+            </div>
+          </div>
+          <!-- USE_CASES_END -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════ QUESTIONS ASKED ════════════ -->
+    <section class="questions">
+      <div class="container container--narrow">
+        <h2>Questions Asked</h2>
+        <div class="questions-list">
+          <!-- QUESTIONS_START -->
+          <!--
+            Each Q&A is a collapsible <details> accordion:
+            <details class="question-item">
+              <summary>
+                <span class="question-item__icon">Q</span>
+                <span class="question-item__question">The question text?</span>
+                <svg class="question-item__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="question-item__a">
+                <p>The answer text.</p>
+              </div>
+            </details>
+          -->
+          <details class="question-item">
+            <summary>
+              <span class="question-item__icon">Q</span>
+              <span class="question-item__question"><!-- QUESTION_TEXT --></span>
+              <svg class="question-item__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="question-item__a">
+              <p><!-- ANSWER_TEXT --></p>
+            </div>
+          </details>
+          <!-- QUESTIONS_END -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════ HOMEWORK ════════════ -->
+    <section class="homework">
+      <div class="container container--narrow">
+        <h2>Homework</h2>
+        <ul class="homework-list">
+          <!-- HOMEWORK_START -->
+          <li>
+            <input type="checkbox" class="homework-list__checkbox">
+            <span class="homework-list__text"><!-- HOMEWORK_ITEM --></span>
+          </li>
+          <li>
+            <input type="checkbox" class="homework-list__checkbox">
+            <span class="homework-list__text"><!-- HOMEWORK_ITEM --></span>
+          </li>
+          <li>
+            <input type="checkbox" class="homework-list__checkbox">
+            <span class="homework-list__text"><!-- HOMEWORK_ITEM --></span>
+          </li>
+          <!-- HOMEWORK_END -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- ════════════ RESOURCES ════════════ -->
     <section class="resources">
       <div class="container container--narrow">
         <h2>Resources</h2>
         <ul class="resources-list">
-          <li><a href="URL" target="_blank" rel="noopener">Resource Name</a> – Brief description</li>
-          <li><a href="URL" target="_blank" rel="noopener">Another Resource</a> – Brief description</li>
-          <!-- Add more resources as needed -->
+          <!-- RESOURCES_START -->
+          <li>
+            <a href="<!-- RESOURCE_URL -->" target="_blank" rel="noopener"><!-- RESOURCE_NAME --></a>
+          </li>
+          <!-- RESOURCES_END -->
         </ul>
       </div>
     </section>
+
+    <!-- ════════════ AI SAFARI CTA BANNER ════════════ -->
+    <section class="cta-section">
+      <div class="container container--narrow">
+        <div class="cta-banner">
+          <span class="cta-banner__label">Free Community</span>
+          <h2 class="cta-banner__title">AI Safari</h2>
+          <div class="cta-banner__body">
+            <p class="cta-banner__description">Learn alongside other professionals. Real use cases, get unstuck fast, and build together.</p>
+            <a href="https://sooper.app/ai-safari" class="btn-cta" target="_blank" rel="noopener">Join now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- ═══════════════════════════════════════════════════════════════
-       FOOTER
-       ═══════════════════════════════════════════════════════════════ -->
+  <!-- ════════════ FOOTER ════════════ -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-logo">
-        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="8" fill="#ffffff"/>
-          <path d="M10 28L20 12L30 28H10Z" fill="#7f68f3"/>
-        </svg>
-        <span class="logo-text">We Are Animals Academy</span>
+      <div class="footer-inner">
+        <img src="../assets/logo-inverse.svg" alt="We Are Animals" class="footer-logo-mark">
+        <a href="https://www.weareanimals.ai" class="footer-link" target="_blank" rel="noopener">www.weareanimals.ai</a>
       </div>
-      <p class="footer-copy">&copy; 2026 We Are Animals. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2026 We Are Animals. All rights reserved. Built from coaching session transcripts by Claude Opus 4.6.</p>
     </div>
   </footer>
+
+  <script src="../lightbox.js"></script>
+
 </body>
 </html>
