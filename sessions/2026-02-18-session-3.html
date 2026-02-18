@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The AI Fluency Framework | AI Safari Ferrel</title>
+  <meta name="description" content="The four interconnected steps of AI fluency: Delegation, Description, Discernment, and Diligence &mdash; plus practical tips for custom instructions and ChatGPT Projects.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- ════════════ HEADER ════════════ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/logo.svg" alt="We Are Animals" class="logo-mark">
+      </a>
+      <a href="../index.html" class="nav-back">&larr; All Sessions</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════ SESSION HERO ════════════ -->
+    <section class="session-hero">
+      <div class="container container--narrow">
+        <span class="topic-tag">Session 3 &bull; February 18, 2026</span>
+        <h1>The AI Fluency Framework</h1>
+        <p class="lead">The four interconnected steps of AI fluency &mdash; Delegation, Description, Discernment, and Diligence &mdash; plus practical tips for custom instructions and ChatGPT Projects.</p>
+      </div>
+    </section>
+
+    <!-- ════════════ KEY TAKEAWAYS ════════════ -->
+    <section class="takeaways">
+      <div class="container container--narrow">
+        <h2>Key Takeaways</h2>
+        <ul class="takeaways-list">
+          <li>Be specific, not vague &mdash; &ldquo;make it look more professional&rdquo; gives AI nothing to work with. Define exactly what you mean</li>
+          <li>New topic, new chat &mdash; mixing unrelated tasks in one conversation wastes context and confuses the AI</li>
+          <li>Always specify your desired output format &mdash; tell AI to use Excel formulas instead of Python calculations if you need reusable files</li>
+          <li>Use AI to write your own custom instructions &mdash; it can phrase things in a way that it will understand best</li>
+          <li>The Description&ndash;Discernment loop is how you improve &mdash; evaluate every result and refine your instructions accordingly</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ════════════ WHAT WE COVERED ════════════ -->
+    <section class="discussion">
+      <div class="container container--narrow">
+        <h2>What We Covered</h2>
+        <div class="discussion-content">
+
+          <h3>Participant Progress &amp; Use Cases</h3>
+          <p>We started by reviewing what participants had been working on since last session. Caiti continued iterating on her custody calendar project &mdash; she successfully generated the right file format for Google Calendar import, but hit issues with color coding not transferring. Mel shared two experiments: formatting an Excel budget report for client presentation, and creating an overdue payment report with aging buckets.</p>
+
+          <h3>The Description&ndash;Discernment Loop in Action</h3>
+          <p>Mel&rsquo;s experience was a textbook example of the Description&ndash;Discernment loop. She asked ChatGPT to &ldquo;make the Excel budget table look more professional&rdquo; &mdash; but &ldquo;professional&rdquo; is subjective. The AI had to guess what she meant.</p>
+          <ul>
+            <li><strong>The fix</strong> &ndash; Define exactly what &ldquo;professional&rdquo; means to you: specific colors, layout, data presentation, formatting rules</li>
+            <li><strong>The win</strong> &ndash; Despite the vague formatting request, AI did suggest useful KPIs like traffic-light color coding (green/yellow/red) that Mel implemented in her client reports</li>
+          </ul>
+
+          <blockquote>
+            <p>&ldquo;If somebody tells you &lsquo;make something look more professional&rsquo; &mdash; what does that mean? What kind of instructions do you need to hear from the other person? That is the instruction you need to give to AI as well.&rdquo;</p>
+          </blockquote>
+
+          <h3>Why ChatGPT Uses Python Instead of Excel Formulas</h3>
+          <p>Mel discovered that when she asked ChatGPT to calculate summaries in a spreadsheet, it wrote a Python program behind the scenes rather than adding Excel formulas. The numbers were correct, but the downloaded file had no formulas &mdash; making it impossible to reuse.</p>
+          <ul>
+            <li><strong>Why it happens</strong> &ndash; It&rsquo;s easier for ChatGPT to read data and compute results with its own code than to manipulate the actual spreadsheet formulas</li>
+            <li><strong>How to fix it</strong> &ndash; Explicitly instruct: &ldquo;Always use Excel formulas. Don&rsquo;t calculate results using Python. Write the formula so I can download and reuse the file&rdquo;</li>
+            <li><strong>Pro tip</strong> &ndash; Add this to your Custom Instructions so it applies to every future chat</li>
+          </ul>
+
+          <h3>Context Management: New Topic = New Chat</h3>
+          <p>Mel was working on two unrelated tasks in the same conversation: a budget report and an overdue payment report. This is a common mistake that wastes context window space and can confuse the AI.</p>
+          <ul>
+            <li><strong>Rule of thumb</strong> &ndash; If the new task doesn&rsquo;t need the context from the previous task, start a new chat</li>
+            <li><strong>Better approach</strong> &ndash; Save your reusable context (company info, role description) separately, and paste it into each new conversation as needed</li>
+          </ul>
+
+          <h3>Custom Instructions &amp; ChatGPT Projects</h3>
+          <p>Otakar demonstrated two powerful ChatGPT features for managing context:</p>
+          <ul>
+            <li><strong>Custom Instructions</strong> &ndash; Global settings that apply to every chat you open. Perfect for universal preferences like &ldquo;always use Excel formulas&rdquo; or your professional context</li>
+            <li><strong>Projects</strong> &ndash; Scoped workspaces with their own context files, instructions, and memory. Create one for each area of your life or work (e.g., a &ldquo;surfing&rdquo; project, a work project, a personal project)</li>
+            <li><strong>Memory</strong> &ndash; Within a project, ChatGPT automatically remembers things across chats. You can manage and delete irrelevant memories in the project settings</li>
+          </ul>
+          <p>Be careful with Custom Instructions &mdash; only put things there that apply to everything you do. Project-specific context belongs in Projects.</p>
+
+          <h3>The AI Fluency Framework: 4 Steps</h3>
+          <p>Otakar introduced the AI Fluency Framework &mdash; four interconnected steps that form the foundation of effective AI use:</p>
+          <ul>
+            <li><strong>Delegation</strong> &ndash; Understanding what AI can and cannot do for you. Break big tasks into smaller steps and ask AI which ones it can help with. Keep the parts that make your work uniquely yours</li>
+            <li><strong>Description</strong> &ndash; The art of communicating what you want. Mastering description is the new craft &mdash; instead of mastering design tools, you master describing what the design should look like</li>
+            <li><strong>Discernment</strong> &ndash; Evaluating AI output critically. Don&rsquo;t accept results blindly. When results are unsatisfactory, step back to improve your description &mdash; or step back further to question whether the task should have been delegated to AI at all</li>
+            <li><strong>Diligence</strong> &ndash; Assessing the ethical impact of your AI usage and transparently documenting how AI was used in your work. Give AI the credit it deserves</li>
+          </ul>
+
+          <blockquote>
+            <p>&ldquo;AI is the art of being able to describe what you want to do. If you wanted to create a design before, you had to master the craft of being a designer. Right now, you need to master the craft of describing what the design is like.&rdquo;</p>
+          </blockquote>
+
+          <h3>Diligence Statements</h3>
+          <p>Otakar shared a personal example: when he created a website for his Airbnb room, he credited AI in the footer rather than claiming he built it himself. This is the practice of diligence &mdash; being transparent about how AI contributed to your work.</p>
+          <ul>
+            <li><strong>What to include</strong> &ndash; Which AI was used and what process was followed</li>
+            <li><strong>Why it matters</strong> &ndash; Employers increasingly value people who can demonstrate intentional, skilled use of AI &mdash; not just random prompting</li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════ USE CASES ════════════ -->
+    <section class="use-cases">
+      <div class="container container--narrow">
+        <h2>Use Cases</h2>
+        <p class="section-desc">Topics and challenges participants brought to the session.</p>
+        <div class="use-cases-list">
+          <div class="use-case-item">
+            <span class="use-case-item__icon">&#9679;</span>
+            <div class="use-case-item__content">
+              <span class="use-case-item__name">Caiti</span>
+              <span class="use-case-item__desc">Custody calendar iteration</span>
+            </div>
+          </div>
+          <div class="use-case-item">
+            <span class="use-case-item__icon">&#9679;</span>
+            <div class="use-case-item__content">
+              <span class="use-case-item__name">Mel</span>
+              <span class="use-case-item__desc">Budget report formatting &amp; KPIs</span>
+            </div>
+          </div>
+          <div class="use-case-item">
+            <span class="use-case-item__icon">&#9679;</span>
+            <div class="use-case-item__content">
+              <span class="use-case-item__name">Mel</span>
+              <span class="use-case-item__desc">Overdue payment report</span>
+            </div>
+          </div>
+          <div class="use-case-item">
+            <span class="use-case-item__icon">&#9679;</span>
+            <div class="use-case-item__content">
+              <span class="use-case-item__name">Caiti</span>
+              <span class="use-case-item__desc">Children&rsquo;s bookstore website</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════ QUESTIONS ASKED ════════════ -->
+    <section class="questions">
+      <div class="container container--narrow">
+        <h2>Questions Asked</h2>
+        <div class="questions-list">
+
+          <details class="question-item">
+            <summary>
+              <span class="question-item__icon">Q</span>
+              <span class="question-item__question">How do you know whether the problem is your description or whether AI simply can&rsquo;t do the task?</span>
+              <svg class="question-item__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="question-item__a">
+              <p>Practice is the main teacher. The more you experiment, the more you learn what AI handles well and where it falls short. For example, after discovering ChatGPT uses Python instead of Excel formulas, you now know to always specify the output format. Education also helps &mdash; learning what AI can and cannot do sets realistic expectations from the start.</p>
+            </div>
+          </details>
+
+          <details class="question-item">
+            <summary>
+              <span class="question-item__icon">Q</span>
+              <span class="question-item__question">Why did ChatGPT use Python to calculate my spreadsheet instead of writing Excel formulas?</span>
+              <svg class="question-item__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="question-item__a">
+              <p>ChatGPT defaults to running Python code behind the scenes because it&rsquo;s computationally easier than manipulating Excel formulas directly. The numbers will be correct, but the file won&rsquo;t have reusable formulas. The fix is simple: explicitly tell it to use Excel formulas and not Python calculations.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════ HOMEWORK ════════════ -->
+    <section class="homework">
+      <div class="container container--narrow">
+        <h2>Homework</h2>
+        <ul class="homework-list">
+          <li>
+            <input type="checkbox" class="homework-list__checkbox">
+            <span class="homework-list__text">Have a conversation with AI to extract your personal context &mdash; ask it to &ldquo;ask me questions to understand my context better,&rdquo; then save the extracted summary somewhere accessible</span>
+          </li>
+          <li>
+            <input type="checkbox" class="homework-list__checkbox">
+            <span class="homework-list__text">Set up Custom Instructions in ChatGPT with your universal preferences (e.g., &ldquo;always use Excel formulas, never Python calculations&rdquo;)</span>
+          </li>
+          <li>
+            <input type="checkbox" class="homework-list__checkbox">
+            <span class="homework-list__text">Create at least one ChatGPT Project with relevant context files for a specific area of your life or work</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ════════════ RESOURCES ════════════ -->
+    <section class="resources">
+      <div class="container container--narrow">
+        <h2>Resources</h2>
+        <ul class="resources-list">
+          <li><a href="https://sooper.app/ai-safari" target="_blank" rel="noopener">AI Safari Community &mdash; Join for ongoing discussions and support</a></li>
+          <li><a href="https://www.anthropic.com/learn/claude-for-you" target="_blank" rel="noopener">AI Fluency Framework &mdash; Anthropic&rsquo;s guide to effective AI interaction</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ════════════ AI SAFARI CTA BANNER ════════════ -->
+    <section class="cta-section">
+      <div class="container container--narrow">
+        <div class="cta-banner">
+          <span class="cta-banner__label">Free Community</span>
+          <h2 class="cta-banner__title">AI Safari</h2>
+          <div class="cta-banner__body">
+            <p class="cta-banner__description">Learn alongside other professionals. Real use cases, get unstuck fast, and build together.</p>
+            <a href="https://sooper.app/ai-safari" class="btn-cta" target="_blank" rel="noopener">Join now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <img src="../assets/logo-inverse.svg" alt="We Are Animals" class="footer-logo-mark">
+        <a href="https://www.weareanimals.ai" class="footer-link" target="_blank" rel="noopener">www.weareanimals.ai</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 We Are Animals. All rights reserved. Built from coaching session transcripts by Claude Opus 4.6.</p>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+
+</body>
+</html>
